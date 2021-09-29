@@ -1,0 +1,68 @@
+$backgroundColor:#0367d1;
+$Color:#da1414a4;
+$fontColor:#000;
+
+
+header{
+  h2{
+  background-color: $backgroundColor;
+  margin-top: 0;
+  top: 0;
+  line-height: 40px;
+  align-items: center;
+  padding: 2px 0 2px 10px;
+  color: $fontColor;
+  }
+}
+
+.container{
+ margin:20px;
+  .todo{
+    background-color: khaki;
+    margin: 2% 10%;
+    border-bottom: 1.5px solid #7a7575;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+
+    .todo-kiri{
+      padding: 10px;
+
+      a{
+        font-weight: bold;
+      }
+
+    }
+    .todo-kanan{
+      margin: 20px;
+
+      .edit{
+        width: 80px;
+        margin: 10px;
+        padding:10px;
+        background-color: $backgroundColor;
+      }
+
+      .delete{
+        width: 80px;
+        margin: 10px;
+        padding:10px;
+        background-color: $Color;
+      }
+    }
+  }
+
+  h2{
+    width: 100%;;
+    color: $backgroundColor;
+  }
+}
+
+footer{
+  display: flex;
+  line-height:0px;
+  justify-content: center;
+}

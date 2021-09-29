@@ -1,0 +1,26 @@
+$backgroundColor:#d6d7d8;
+$submitColor:#716eff;
+
+.section{
+  width: 40%;
+  display: flex;
+  margin: 0 30%;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  background-color: $backgroundColor;
+  input{
+    border: 0.5px solid $submitColor;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    height: 25px;
+  }
+  .button{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    height: 25px;
+    background-color: #716eff;
+  }  
+}
