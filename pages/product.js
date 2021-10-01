@@ -24,7 +24,7 @@ const Products = (props) => {
         : error
         ? error.message
         : products.map((product) => (
-            <div className="card">
+            <div className="product"  key={product.id}>
              
               <div className="text">
                 <h3 key={product.id}>{product.title}</h3>

@@ -16,49 +16,6 @@ header{
 }
 
 .container{
- margin:20px;
-  .todo{
-    background-color: khaki;
-    margin: 2% 10%;
-    border-bottom: 1.5px solid #7a7575;
-    border-radius: 5px;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-
-    .todo-kiri{
-      padding: 10px;
-
-      a{
-        font-weight: bold;
-      }
-
-    }
-    .todo-kanan{
-      margin: 20px;
-
-      .edit{
-        width: 80px;
-        margin: 10px;
-        padding:10px;
-        background-color: $backgroundColor;
-      }
-
-      .delete{
-        width: 80px;
-        margin: 10px;
-        padding:10px;
-        background-color: $Color;
-      }
-    }
-  }
-
-  h2{
-    width: 100%;;
-    color: $backgroundColor;
-  }
 }
 
 footer{

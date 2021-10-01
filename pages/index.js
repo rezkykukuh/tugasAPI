@@ -23,7 +23,7 @@ export default function Home() {
     setForm(data);
   }  
   
-function handleSubmit(e) {
+const handleSubmit=(e)=> {
   e.preventDefault();
   if (
     (form.title === "",
@@ -33,7 +33,7 @@ function handleSubmit(e) {
     return false;
   }
 
-  //pengecekan
+  //edit
   if(update.status){
     dispatch(
     editProduct({
@@ -41,8 +41,9 @@ function handleSubmit(e) {
         title : form.title,
         price : form.price,
         category : form.category,
-      }));
-      alert("data telah diedit");
+      })
+      );
+      alert("product telah diedit");
     }
     else{
     //menambah data
@@ -53,7 +54,7 @@ function handleSubmit(e) {
         category: form.category,
       })
     );
-    alert("penambahan data berhasil");
+    alert("penambahan product berhasil");
   }
    setForm({title:"", category: "", price:""});
    setUpdate({ id: null, status: false });
@@ -67,6 +68,7 @@ function handleSubmit(e) {
       category: product.category,
     });
     setUpdate({ id: product.id, status: true });
+    console.log(product.id);
   };
 
   return (

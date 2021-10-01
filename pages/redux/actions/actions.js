@@ -41,10 +41,10 @@ import {
     }
   };
 
-  export const editProduct = (id, data) => async (dispatch) => {
+  export const editProduct = (data) => async (dispatch) => {
     try {
       await axios
-        .put(`https://fakestoreapi.com/products/${id}`, data)
+        .put(`https://fakestoreapi.com/products/${data.id}`, data)
         .then((res) => {
           dispatch({
             type: EDIT_PRODUCTS,
