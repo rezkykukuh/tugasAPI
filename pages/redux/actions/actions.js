@@ -9,7 +9,7 @@ import {
 
   export const getProducts = () => async (dispatch) => {
     try {
-      const res = await axios.get(`https://fakestoreapi.com/products?limit=5`);
+      const res = await axios.get(`https://fakestoreapi.com/products?`);
       dispatch({
         type: GET_PRODUCTS,
         payload: res.data,

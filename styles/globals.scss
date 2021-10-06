@@ -1,11 +1,10 @@
-$backgroundColor:#0367d1;
-$Color:#da1414a4;
-$fontColor:#000;
-
+$headerColor:#000;
+$bot:#4b5be9a4;
+$fontColor:#fff;
 
 header{
   h2{
-  background-color: $backgroundColor;
+  background-color: $headerColor;
   margin-top: 0;
   top: 0;
   line-height: 40px;
@@ -16,6 +15,59 @@ header{
 }
 
 .container{
+ 
+  margin: 20px;
+  font-size: 20px;
+  .top{
+    display: flex;
+    justify-content: space-between;
+    .Modal{
+      
+      button{
+        width: 100px;
+        height: 40px;
+        background-color: $bot;
+        border:0.5px solid rgb(187, 187, 187);
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      button:hover{
+        color: rgb(255, 255, 255);
+        background-color: #0021b3;
+      }
+    }
+    .search{
+      input{
+        justify-content: center;
+        height: 30px;
+        width: 200px;
+        border: 0.5px solid rgb(180, 179, 179);
+      }
+    }
+    }
+    .product{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      .idproduct{
+        width: 30%;
+        margin: 10px;
+        border: 1px solid rgb(141, 131, 131);
+        box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.3);
+
+      .daftarproduct{
+        text-align: center;
+        margin:10px;
+        
+        h3{
+          height:60px;
+        }
+      }
+      }
+
+    }
+    
 }
 
 footer{

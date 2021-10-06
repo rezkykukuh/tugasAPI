@@ -1,19 +1,26 @@
-$backgroundColor:#d6d7d8;
+$backgroundColor:#ffffff;
 $submitColor:#716eff;
 
 .section{
+text-align: center;
   input{
     border:0.5px solid #fff;
     border-bottom:0.5px solid $submitColor;
-    width: 50%;
+    border-radius: 10px;
+    width: 70%;
     margin: 10px;
     height: 25px;
   }
   .button{
     cursor: pointer;
+    font-size: 20px;
     border-radius: 10px;
-    width: 5%;
-    height: 20%;
-    background-color: #716eff;
+    height: 45px;
+    color: $backgroundColor;
+    background-color: #02005f;
+    border:1px solid #fff;
   }  
+  .button:hover{
+    background-color: #094bff;
+  }
 }
